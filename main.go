@@ -10,6 +10,7 @@ func main() {
 	fmt.Println("Listening on port :6379")
 
 	// Create a new server
+	// Port number must be same as Redis
 	l, err := net.Listen("tcp", ":6379")
 	if err != nil {
 		fmt.Println(err)
